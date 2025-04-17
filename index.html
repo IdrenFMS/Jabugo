@@ -2,19 +2,25 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Découverte du Jambon de Jabugo</title>
+  <title>Module E-learning : Le Jambon de Jabugo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>À la découverte du Jambon de Jabugo</h1>
-    <div id="slide-content" class="slide">
-      <!-- Le contenu sera injecté ici par JS -->
-    </div>
-    <div class="navigation">
-      <button onclick="previousSlide()">⟵ Précédent</button>
-      <button onclick="nextSlide()">Suivant ⟶</button>
-    </div>
+    <header>
+      <h1>🍖 Le Jambon de Jabugo</h1>
+      <p class="subtitle">Un trésor de la Sierra de Huelva</p>
+    </header>
+
+    <main id="slide-content" class="slide">
+      <!-- Contenu injecté via JS -->
+    </main>
+
+    <footer class="navigation">
+      <button onclick="previousSlide()">⬅ Précédent</button>
+      <span id="slide-indicator"></span>
+      <button onclick="nextSlide()">Suivant ➡</button>
+    </footer>
   </div>
   <script src="script.js"></script>
 </body>
